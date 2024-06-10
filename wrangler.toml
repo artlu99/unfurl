@@ -1,0 +1,9 @@
+name = "unfurl"
+compatibility_date = "2023-12-01"
+
+[vars]
+SECRET = "replace-with-my-secret"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "c1d00050fe6d441a8c60e85efc057279"
