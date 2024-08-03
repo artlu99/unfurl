@@ -18,6 +18,9 @@ importers:
       '@cloudflare/workers-types':
         specifier: ^4.20240529.0
         version: 4.20240605.0
+      super-tiny-icons:
+        specifier: ^0.6.0
+        version: 0.6.0
       wrangler:
         specifier: ^3.57.2
         version: 3.60.0(@cloudflare/workers-types@4.20240605.0)
@@ -432,6 +435,10 @@ packages:
     resolution: {integrity: sha512-1FoACn7k8FwYHVga0Pc7f7n+SboR15s5cQb83Eh0Vd02ZFMV6qhm9TMYPuv85NPWHkM6LnS0eQCKdOnDzsr1EA==}
     engines: {node: '>=16.0.0'}
 
+  opencollective-postinstall@2.0.3:
+    resolution: {integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==}
+    hasBin: true
+
   parse5-htmlparser2-tree-adapter@7.0.0:
     resolution: {integrity: sha512-B77tOZrqqfUfnVcOrUvfdLbz4pu4RopLD/4vmu3HUPswwTA8OH0EMW9BlWR2B0RCoiZRAHEUu7IxeP1Pd1UU+g==}
 
@@ -494,6 +501,9 @@ packages:
   stoppable@1.1.0:
     resolution: {integrity: sha512-KXDYZ9dszj6bzvnEMRYvxgeTHU74QBFL54XKtP3nyMuJ81CFYtABZ3bAzL2EdFUaEwJOBOgENyFj3R7oTzDyyw==}
     engines: {node: '>=4', npm: '>=6'}
+
+  super-tiny-icons@0.6.0:
+    resolution: {integrity: sha512-xJ7jIAO8qCnmXQBcHdBA4oSdvyiDM4aWX/mViWaLNhBnDE9/xwsKTakObdhEUs36JZ/rfzqI+Uc72LgnPxvPUw==}
 
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
@@ -913,6 +923,8 @@ snapshots:
       cheerio: 1.0.0-rc.12
       validator: 13.12.0
 
+  opencollective-postinstall@2.0.3: {}
+
   parse5-htmlparser2-tree-adapter@7.0.0:
     dependencies:
       domhandler: 5.0.3
@@ -973,6 +985,10 @@ snapshots:
       get-source: 2.0.12
 
   stoppable@1.1.0: {}
+
+  super-tiny-icons@0.6.0:
+    dependencies:
+      opencollective-postinstall: 2.0.3
 
   supports-preserve-symlinks-flag@1.0.0: {}
 

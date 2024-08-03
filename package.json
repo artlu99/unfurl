@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240529.0",
+    "super-tiny-icons": "^0.6.0",
     "wrangler": "^3.57.2"
   }
 }
