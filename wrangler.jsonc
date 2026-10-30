@@ -3,10 +3,15 @@
   "name": "unfurl",
   "main": "src/index.ts",
   "compatibility_date": "2026-10-19",
-  "kv_namespaces": [
-    {
-      "binding": "KV",
-      "id": "c1d00050fe6d441a8c60e85efc057279"
-    }
-  ]
+  // Pinned: adding a custom domain or route later must not silently disable
+  // unfurl.artlu.workers.dev (workers_dev defaults to false once routes exist).
+  "workers_dev": true,
+  // Workers Caching: tiered cache in front of the worker. Covers workers.dev,
+  // future custom domains, and service-binding fetch() callers; driven by the
+  // Cache-Control headers the worker already emits. POST (e.g. /bust) is never
+  // cached. cross_version_cache deliberately unset: deploys are rare, and a
+  // cold outer cache on deploy guarantees changes take effect immediately.
+  "cache": {
+    "enabled": true
+  }
 }
