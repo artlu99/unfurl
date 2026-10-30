@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "unfurl",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-19",
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "c1d00050fe6d441a8c60e85efc057279"
+    }
+  ]
+}

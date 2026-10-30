@@ -7,11 +7,7 @@ import ogs from "open-graph-scraper-lite";
 import { hello, landingPage } from "./hello";
 import { isValidUrl, safeFetch } from "./utils";
 
-type Bindings = {
-  KV: KVNamespace;
-};
-
-const app = new Hono<{ Bindings: Bindings }>();
+const app = new Hono<{ Bindings: Cloudflare.Env }>();
 
 app
   .use("/", cors()) // TODO: replace open CORS with authentication and CSRF protection

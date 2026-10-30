@@ -1,15 +1,14 @@
 {
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
-    "hono": "^4.4.4",
-    "open-graph-scraper-lite": "^2.0.0"
+    "hono": "^4.13.13",
+    "open-graph-scraper-lite": "^2.1.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240529.0",
     "super-tiny-icons": "^0.6.0",
-    "wrangler": "^3.57.2"
+    "wrangler": "^4.152.0"
   }
 }
